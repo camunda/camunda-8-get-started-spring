@@ -10,8 +10,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import io.camunda.zeebe.client.ZeebeClient;
+import io.camunda.zeebe.spring.client.annotation.Deployment;
 
 @SpringBootApplication
+@Deployment(resources = "classpath:process-payments.bpmn")
 public class ProcessPaymentsApplication implements CommandLineRunner {
 
 	private static final Logger LOG = LoggerFactory.getLogger(ProcessPaymentsApplication.class);
