@@ -1,3 +1,5 @@
+Heads up -- this repo is an active work in progress!
+
 # Get started with Camunda 8 and Spring Boot
 
 Uses Spring Boot and [the Spring Zeebe SDK](https://docs.camunda.io/docs/apis-tools/spring-zeebe-sdk/getting-started/#add-the-spring-zeebe-sdk-to-your-project) to interact with a local self-managed Camunda installation. The interactions with Zeebe are:
