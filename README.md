@@ -4,7 +4,7 @@ This project demonstrates the use of Spring Boot and [the Spring Zeebe SDK](http
 
 ## Written guide
 
-A guide for developing this project is available in the [Camunda docs][the-guide]. See that guide for step-by-step instructions and more detailed explanations.
+A guide for developing this project is available in the [Camunda docs](https://docs.camunda.io/docs/next/guides/getting-started-java-spring/). See this guide for step-by-step instructions and more detailed explanations.
 
 ## Interactions with Zeebe
 
@@ -16,7 +16,7 @@ Included in this project are examples of:
 
 ## Prerequisites
 
-1. A running Self-Managed Camunda installation (see [the associated guide][the-guide] for instructions).
+1. A running Self-Managed Camunda installation (see [the associated guide](https://docs.camunda.io/docs/next/guides/getting-started-java-spring/) for instructions).
 2. [Maven](https://maven.apache.org/).
 3. Version 17+ of a Java Development Kit (JDK).
 
