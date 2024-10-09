@@ -2,9 +2,6 @@
 
 This project demonstrates the use of Spring Boot and [the Spring Zeebe SDK](https://docs.camunda.io/docs/apis-tools/spring-zeebe-sdk/getting-started/#add-the-spring-zeebe-sdk-to-your-project) to interact with a local Self-Managed Camunda installation.
 
-> [!WARNING]  
-> Due to a bug in 8.6, use the Spring Zeebe SDK version `8.5.0`.
-
 ## Written guide
 
 A guide for developing this project is available in the [Camunda docs][the-guide]. See that guide for step-by-step instructions and more detailed explanations.
