@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: process_payments
+camunda:
+  client:
+    mode: self-managed
+    zeebe:
+      enabled: true
+      grpc-address: http://localhost:26500
+      rest-address: http://localhost:8080
