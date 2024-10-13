@@ -30,6 +30,13 @@ Included in this project are examples of:
 
 You should see output indicating that a process has been deployed, a process instance has been started, and a service task has been handled.
 
+## Running the project in Docker
+
+1. Build the Docker Image and Run the Docker Container:
+   ```shell
+   mvn spring-boot:build-image && docker run --network host $(mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout):$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+   ```
+
 ## Troubleshooting
 
 If the project fails to run, check the following:
