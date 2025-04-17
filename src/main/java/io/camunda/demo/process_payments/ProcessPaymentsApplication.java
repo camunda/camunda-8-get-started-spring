@@ -11,10 +11,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import io.camunda.zeebe.client.ZeebeClient;
 import io.camunda.zeebe.spring.client.annotation.Deployment;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
 
 @SpringBootApplication
 @Deployment(resources = "classpath:process-payments.bpmn")
-public class ProcessPaymentsApplication implements CommandLineRunner {
+public class ProcessPaymentsApplication {
 
 	private static final Logger LOG = LoggerFactory.getLogger(ProcessPaymentsApplication.class);
 
@@ -25,8 +27,8 @@ public class ProcessPaymentsApplication implements CommandLineRunner {
 		SpringApplication.run(ProcessPaymentsApplication.class, args);
 	}
 
-	@Override
-	public void run(final String... args) {
+	@EventListener(ApplicationReadyEvent.class)
+	public void doSomethingAfterStartup() {
 		var bpmnProcessId = "process-payments"; // or whatever the key is
 		var event = zeebeClient.newCreateInstanceCommand()
 				.bpmnProcessId(bpmnProcessId)
