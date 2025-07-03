@@ -1,10 +1,12 @@
 spring:
   application:
     name: process_payments
-camunda:
+zeebe:
   client:
-    mode: self-managed
-    zeebe:
-      enabled: true
-      grpc-address: http://localhost:26500
-      rest-address: http://localhost:8080
+    cloud:
+      clusterId: 0ec5b470-06a6-4e32-9111-eca0733758b6
+      clientId: VjweAnJi78rwS0RXC~D2VGL9Hw_On6Bv
+      clientSecret: <sec>
+      region: bru-2
+      auth-url: https://login.cloud.camunda.io/oauth/token
+      port: 443
